@@ -1,0 +1,15 @@
+---
+description: Route golf coaching requests to PGA Play Golf MCP tools and keep internal IDs private
+alwaysApply: false
+---
+
+# PGA Play Golf MCP
+
+When the user wants golf lessons, coaching, programs, availability, or booking:
+
+1. Enable and use the **pga-play-golf** MCP server (production endpoint `https://mcp.pga.com/mcp`).
+2. Prefer `search_golf_programs` for group events; `search_golf_coaches` for private lessons; `get_golf_coach_availability` only after a coach is selected; `book_golf_lesson` only after offering and time are chosen.
+3. Never show or mention internal identifiers (`slug`, `offeringId`, program or offering IDs, pagination cursors) in messages to the user.
+4. Booking requires PGA.com sign-in with OAuth scope `mcp:coaching`; search and availability do not require sign-in on Cursor.
+
+Load the **play-golf** skill for the full booking checklist and participant fields.

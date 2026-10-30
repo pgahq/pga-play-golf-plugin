@@ -1,0 +1,33 @@
+{
+  "name": "pga-play-golf",
+  "displayName": "PGA Play Golf",
+  "version": "1.0.0",
+  "description": "Find a PGA coach or group program near you, check lesson availability, and book a lesson through the PGA of America MCP server.",
+  "author": {
+    "name": "PGA of America",
+    "email": "support@pga.com"
+  },
+  "homepage": "https://mcp.pga.com",
+  "repository": "https://github.com/pgahq/pga-play-golf-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": [
+    "golf",
+    "pga",
+    "coaching",
+    "lessons",
+    "programs",
+    "booking",
+    "pga coach",
+    "golf lesson",
+    "junior golf",
+    "golf clinic",
+    "golf camp"
+  ],
+  "category": "integrations",
+  "tags": [
+    "golf",
+    "lessons",
+    "booking"
+  ]
+}
